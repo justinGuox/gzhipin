@@ -1,5 +1,5 @@
 # 源码项目说明:
-	gzhipin-client：里面包含gzhipin-server，为项目的后端源码
+	里面包含gzhipin-server，为项目的后端源码
 
 # react项目的运行说明
 ## 1. 准备
