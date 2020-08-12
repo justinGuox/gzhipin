@@ -1,0 +1,43 @@
+/* 解决[Intervention] Unable to preventDefault inside passive event listener due to target being treated as passive. See <URL>
+疯狂报错问题*/
+* {
+  touch-action: pan-y;
+}
+
+// 使导航始终在底部
+.am-tab-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: inherit !important;
+}
+
+.am-list-brief {
+  background-color: #ebebef;
+  color: #bbb;
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+  //border: 1px solid red;
+  padding: 5px 0 0 10px;
+  border-radius: 5px;
+}
+
+//使标题导航始终在顶部
+.sticky-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+//消息文本居右
+#chat-page .chat-me .am-list-extra {
+  flex-basis: auto !important;
+  //宽度包裹内容
+}
+
+#chat-page .chat-me .am-list-content {
+  padding-right: 15px;
+  text-align: right;
+}
